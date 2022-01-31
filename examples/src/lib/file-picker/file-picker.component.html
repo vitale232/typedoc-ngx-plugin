@@ -1,0 +1,25 @@
+<!-- 
+    Based on:
+    https://www.positronx.io/angular-material-file-browse-upload-ui-with-material-components/
+ -->
+<mat-form-field [appearance]="appearance">
+  <div [vmcDragDrop]="dragOverColor">
+    <mat-toolbar>
+      <!-- Display files names -->
+      <input matInput [formControl]="control" readonly />
+      <!-- Browse Button -->
+      <button mat-flat-button [color]="color" type="button">
+        Browse for a File
+      </button>
+    </mat-toolbar>
+
+    <!-- Transparent input to handle the file -->
+    <input
+      type="file"
+      id="uploadFile"
+      name="uploadFile"
+      [accept]="accept"
+      (change)="uploadFileEvt($event)"
+    />
+  </div>
+</mat-form-field>

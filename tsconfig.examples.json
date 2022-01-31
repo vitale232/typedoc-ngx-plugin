@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@vhb-map/auth": ["libs/auth/src/index.ts"],
+      "@vhb-map/cdk": ["libs/cdk/src/index.ts"],
+      "@vhb-map/config": ["libs/config/src/index.ts"],
+      "@vhb-map/core": ["libs/core/src/index.ts"],
+      "@vhb-map/core/*": ["libs/core/src/*"],
+      "@vhb-map/material-components": ["libs/material-components/src/index.ts"],
+      "@vhb-map/ngx-widget": ["libs/ngx-widget/src/index.ts"],
+      "@vhb-map/schematics": ["libs/schematics/src/index.ts"],
+      "@vhb-map/sql": ["libs/sql/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
