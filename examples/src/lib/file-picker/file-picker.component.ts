@@ -26,6 +26,11 @@ export interface HTMLInputElementChangeEvent extends Event {
 export class FilePickerComponent {
   readonly chooseText = 'Browse for or Drag a File';
   @Input() control: FormControl = new FormControl(this.chooseText);
+  /**
+   * Define the accepted file types. This parameter sets the Input Element's
+   * [`accept`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) attribute.
+   * @Input
+   */
   @Input() accept = undefined;
   @Input() dragOverColor = '#C1C1C1';
   @Input() appearance: MatFormFieldAppearance = 'standard';
